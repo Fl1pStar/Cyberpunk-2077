@@ -1,0 +1,275 @@
+/* шрифт */
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+    url('../fonts/roboto-regular.woff2') format('woff2'),
+    url('../fonts/roboto-regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* выкл фокус */
+
+:focus {
+  outline: none;
+}
+
+/* base  */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  line-height: 1.3;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: hidden;
+  color: #000000;
+}
+
+.main-title {
+  width: 1px;
+  height: 1px;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* start  */
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1390px;
+}
+
+.list {
+  margin: 0;
+  list-style: none;
+}
+
+.text {
+  margin: 0;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 48px;
+  line-height: 56px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #00ff4c;
+}
+
+.link:focus {
+  color: #ff9100;
+}
+
+.link:active {
+  color: #ff3232;
+}
+
+.header {
+  width: 100%;
+  background-color: #000000;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  margin-bottom: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__burger {
+  /* скроем бургер в версии full hd */
+  display: none;
+  width: 50px;
+  min-height: 35px;
+  cursor: pointer;
+  background-image: url('../images/header/burger.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__burger.open {
+  width: 40px;
+  min-height: 40px;
+  background-image: url('../images/header/close-b.svg');
+}
+
+.header__list {
+  display: flex;
+  padding-top: 14px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
+
+.hero {
+  margin-bottom: 30px;
+}
+
+.box:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.hero__container {
+  display: flex;
+}
+
+.hero__text--1 {
+  max-width: 740px;
+  margin-right: 30px;
+}
+
+.hero__text--2 {
+  max-width: 100%;
+  background-image: url('../images/hero/2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 60px 110px;
+}
+
+.hero__text--3 {
+  max-width: 520px;
+}
+
+.hero__image--2 {
+  margin-right: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #000000;
+  padding: 22px 0;
+}
+
+@media (max-width: 1550px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 31px;
+  }
+
+  .text {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero__text--2 {
+    background-image: url('../images/hero/2-lap.jpg');
+    padding: 95px 124px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container {
+    max-width: 768px;
+    padding: 0 27px;
+  }
+
+  .text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .hero__text--2 {
+    background-image: url('../images/hero/2-tab.jpg');
+    padding: 130px 124px;
+  }
+}
+
+@media (max-width: 765px) {
+  .container {
+    max-width: 320px;
+    padding: 0 21px;
+  }
+
+  .header__container {
+    position: relative;
+  }
+
+  .header__burger {
+    /* покажем бургер в мобильной версии */
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    right: 21px;
+  }
+
+  .header__list {
+    /* скроем меню до события клик на бургер */
+    display: none;
+  }
+  
+
+  .header__list.open {
+    width: 320px;
+    min-height: 320px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* при событии клик покажем бургер меню */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .hero__container--1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__container--2 {
+    padding: 0;
+  }
+
+  .hero__text--1 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .hero__text--2 {
+    background-image: url('../images/hero/2-mob.jpg');
+    padding: 30px 21px;
+  }
+
+  .hero__image--2 {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
