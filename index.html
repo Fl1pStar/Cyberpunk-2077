@@ -15,57 +15,67 @@
   <script defer src="assets/js/app.js"></script>
 </head>
 
+
 <body>
   <header class="header">
     <div class="header__container container">
-      <a class="header__link-logo link" target="_blank" href="https://www.cyberpunk.net">
-        <img class="header__logo img" src="assets/images/header/logo.svg" alt="логотип">
-      </a>
-      <nav class="header__nav">
-        <ul class="header__list list">
-          <li class="header__item item">
-            <a class="header__link link" target="_blank" href="https://www.youtube.com/user/CyberPunkGame">
-              <img class="item__icon img" src="assets/images/header/youtube.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link link" target="_blank" href="https://vk.com/cyberpunkgame">
-              <img class="item__icon img" src="assets/images/header/vk.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link link" target="_blank" href="https://www.facebook.com/CyberpunkGameRU">
-              <img class="item__icon img" src="assets/images/header/fb.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link link" target="_blank" href="https://twitter.com/cyberpunkgame">
-              <img class="item__icon img" src="assets/images/header/twitter.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link link" target="_blank" href="https://www.twitch.tv/cdprojektred">
-              <img class="item__icon img" src="assets/images/header/twich.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-          <li class="header__item">
-            <a class="header__link link" target="_blank" href="https://www.instagram.com/cyberpunkgame">
-              <img class="item__icon img" src="assets/images/header/inst.svg" alt="ссылка на ютуб">
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <p class="logo">
+        <a class="link" href="https://www.cyberpunk.net">
+          <img class="header__logo img" src="assets/images/header/logo.svg" alt="логотип">
+        </a></p>
+      <div class="header__burger" id="burger"></div>
+      <ul class="header__list list" id="burgerMenu">
+            <li class="header__item item">
+          <a class="link" href="https://www.youtube.com/user/CyberPunkGame">
+            <img class="item__icon img" src="assets/images/header/youtube.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="header__item item">
+          <a class="link" href="https://vk.com/cyberpunkgame">
+            <img class="item__icon img" src="assets/images/header/vk.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="header__item item">
+          <a class="link" href="https://www.facebook.com/CyberpunkGameRU">
+            <img class="item__icon img" src="assets/images/header/fb.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="header__item item">
+          <a class="link" href="https://twitter.com/cyberpunkgame">
+            <img class="item__icon img" src="assets/images/header/twitter.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="header__item item">
+          <a class="link" href="https://www.twitch.tv/cdprojektred">
+            <img class="item__icon img" src="assets/images/header/twich.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+        <li class="header__item item">
+          <a class="link" href="https://www.instagram.com/cyberpunkgame">
+            <img class="item__icon img" src="assets/images/header/inst.svg" alt="ссылка на ютуб">
+          </a>
+        </li>
+      </ul>
     </div>
   </header>
 
   <section class="hero">
     <h1 class="main-title">PROJECT</h1>
+
+    <div class="img">
+      <div class="hero__container">
+        <img src="assets/images/hero/hero.jpg" alt="Картинка">
+     <a class="link1"  href="https://www.cyberpunk.net">Узнать больше</a>
+         </div>
+      
     <div class="box">
       <div class="hero__container container hero__container--1">
         <p class="hero__text text hero__text--1">
-          Text text text text text text text text text text text text text text text text text text text text text text
-          text text text text text text text text text text text text text text text text text text text text text text
-          text text text text
+          Cyberpunk 2077 — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити,
+           где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, 
+           наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты,
+            навыки и стиль игры своего персонажа, исследуя открытый мир, 
+            где твои поступки влияют на ход сюжета и всё, что тебя окружает.
         </p>
         <picture class="hero__image hero__image--1">
           <source class="img" srcset="assets/images/hero/1-mob.jpg" media="(max-width: 765px)" />
@@ -94,6 +104,12 @@
         </picture>
         <p class="hero__text text hero__text--3">
           Text text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
+          text text text text text text text text text text text text textxt text text text text text text text text text text text text text text text text text text text text text
           text text text text text text text text text text text text text
         </p>
       </div>
