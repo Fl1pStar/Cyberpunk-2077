@@ -273,22 +273,3 @@ body {
     margin-bottom: 30px;
   }
 }
-.link1 {
-  text-decoration: none;
-  color: #F8F200;
-  font-size: 48px;
-  line-height: 56px;
-  transition: color 0.3s ease;
-}
-
-.link1:hover {
-  color: #00ff4c;
-}
-
-.link1:focus {
-  color: #ff9100;
-}
-
-.link1:active {
-  color: #ff3232;
-}
