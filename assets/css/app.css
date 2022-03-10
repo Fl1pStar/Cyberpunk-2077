@@ -150,7 +150,7 @@ body {
   background-image: url('../images/hero/2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 60px 110px;
 }
 
@@ -177,7 +177,6 @@ body {
   }
 
   .text {
-    font-size: 36px;
     line-height: 42px;
   }
 
@@ -273,3 +272,4 @@ body {
     margin-bottom: 30px;
   }
 }
+
