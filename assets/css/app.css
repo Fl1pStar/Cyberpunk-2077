@@ -226,7 +226,7 @@ body {
 
 @media (max-width: 765px) {
   .container {
-    max-width: 400px;
+    max-width: 320px;
     padding: 0 21px;
   }
 
@@ -250,7 +250,7 @@ body {
   
 
   .header__list.open {
-    width: 400px;
+    width: 320px;
     min-height: 320px;
     position: absolute;
     z-index: 1;
@@ -339,5 +339,78 @@ body {
   color: #ff3232;
 }
 
+
+/* Аниматция текст */
+.element-animation-1 {
+   /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+.element-animation-1.element-show-1 {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+/* текст с лева */
+.element-animation-text {
+  /* Скроем элемент в начальном состоянии */
+ opacity: 0;
+ transform: translateX(-50px);
+}
+
+
+.element-animation-text.element-show-text {
+ opacity: 1;
+ transition: all 1s;
+ transform: translateX(0%);
+}
+
+/* текст с право */
+
+.element-animation-text-1 {
+  /* Скроем элемент в начальном состоянии */
+ opacity: 0;
+ transform: translateX(50px);
+}
+
+
+.element-animation-text-1.element-show-text-1 {
+ opacity: 1;
+ transition: all 1s;
+ transform: translateX(0%);
+}
+
+
+
+/* Аниматция logo1 */
+
+.element-animation-logo1 {
+  /* Скроем элемент в начальном состоянии */
+ opacity: 0;
+ transform: translateX(-100px);
+}
+
+.element-animation-logo1.element-show-logo1 {
+ opacity: 1;
+ transition: all 1.5s;
+ transform: translateX(0%);
+}
+
+/* Аниматция logo2 */
+
+.element-animation-logo2 {
+  /* Скроем элемент в начальном состоянии */
+ opacity: 0;
+ transform: translateX(100px);
+}
+
+.element-animation-logo2.element-show-logo2 {
+ opacity: 1;
+ transition: all 1.5s;
+ transform: translateX(0%);
+}
 
 

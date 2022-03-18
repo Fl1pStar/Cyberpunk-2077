@@ -15,3 +15,84 @@
     }
   });
 })();
+
+// Анимация текст
+{function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show-1');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation-1');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+}
+
+//  текст c лева
+{function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show-text');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation-text');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+}
+
+//  текст c права
+
+{function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show-text-1');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation-text-1');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+}
+
+// Лого-1
+{function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show-logo1');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation-logo1');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+}
+// Лого2
+{function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show-logo2');
+    }
+  });
+}
+let options = { threshold: [0.5] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation-logo2');
+for (let elm of elements) {
+  observer.observe(elm);
+}
+}
+
