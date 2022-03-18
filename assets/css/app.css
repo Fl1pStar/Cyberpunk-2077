@@ -108,7 +108,7 @@ body {
 
 .header__burger.open {
   width: 40px;
-  min-height: 40px;
+  min-height: -40px;
   background-image: url('../images/header/close-b.svg');
 }
 
