@@ -98,7 +98,7 @@ body {
 .header__burger {
   /* скроем бургер в версии full hd */
   display: none;
-  width: 50px;
+  width: 40px;
   min-height: 35px;
   cursor: pointer;
   background-image: url('../images/header/burger.svg');
@@ -229,6 +229,10 @@ body {
     max-width: 320px;
     padding: 0 21px;
   }
+  
+  .header__logo {
+    max-width: 85%;
+  }
 
   .header__container {
     position: relative;
@@ -239,8 +243,8 @@ body {
     display: block;
     position: absolute;
     z-index: 3;
-    top: 20px;
-    right: 21px;
+    top: 19px;
+    right: 5px;
   }
 
   .header__list {
